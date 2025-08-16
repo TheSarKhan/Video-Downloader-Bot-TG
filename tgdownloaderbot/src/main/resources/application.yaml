@@ -1,0 +1,11 @@
+server:
+  port: 9999
+
+downloader:
+  bin: yt-dlp.exe       # Windows'ta çalışırken
+  workDir: "./work"     # Proje içinde work klasörü (Linux/Windows uyumlu)
+  outputTemplate: "%(id)s.%(ext)s"
+  timeoutSec: 600
+  maxFileSizeMb: 2000
+  cacheTtlHours: 24
+        # aynı URL 24 saat içinde tekrar istenirse cache
